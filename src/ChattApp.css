@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .chat-app {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode {
+    background-color: #2c2c2c;
+    color: #ffffff;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .user-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .toggle-button {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .messages {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+  }
+  
+  .dark-mode .messages {
+    background-color: #444444;
+    border: 1px solid #555555;
+  }
+  
+  .message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  .username {
+    font-weight: bold;
+    color: #007bff; /* Different color for username */
+    margin-right: 10px;
+  }
+  
+  .text {
+    display: inline;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: gray;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+  }
+  
+  .message-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .send-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .emoji-button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .emoji-picker {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  .emoji {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .emoji:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  
+  
